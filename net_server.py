@@ -18,5 +18,6 @@ while (True):
         connectedSock.sendall(msg.encode())
     except:
         connectedSock.close()
+        sock.close()
         
     
